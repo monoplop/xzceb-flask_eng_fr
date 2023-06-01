@@ -1,19 +1,18 @@
+"""
+Program for translating text between english and french
+"""
 from deep_translator import MyMemoryTranslator
 
-def englishToFrench(englishText):
-    text = englishText
-    frenchText = MyMemoryTranslator(source='en', target='fr').translate(text)
-    # used for testing output to terminal
-    #print(englishText + " translates to " + frenchText)
-    return frenchText
+def english_to_french(english_text):
+    """
+    tanslation from english to french
+    """
+    french_text = MyMemoryTranslator(source='en', target='fr').translate(english_text)
+    return french_text
 
-def frenchToEnglish(frenchText):
-    text = frenchText
-    englishText = MyMemoryTranslator(source='fr', target='en').translate(text)
-    # used for testing output to terminal
-    #print(frenchText + " translates to " + englishText)
-    return englishText
-
-# used for testing output to terminal
-# test = input()
-# englishToFrench(test)
+def french_to_english(french_text):
+    """
+    tanslation from french to english
+    """
+    english_text = MyMemoryTranslator(source='fr', target='en').translate(french_text)
+    return english_text
